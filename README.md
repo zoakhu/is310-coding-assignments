@@ -12,9 +12,10 @@
 ![VS Code Installation](images/vscode-installation.png)
 
 ### 4. AI Tool / Workflow
-I plan to use ChatGPT as an AI assistant to help with understanding course concepts. I will use AI as a support tool rather than a replacement for my own work.
+I plan to use ChatGPT as an AI assistant to help with understanding course concepts that are difficult. I will use AI as a support tool rather than a replacement for my own work.
 
 Hypothesis Username: zoakhu
+
 
 
 
