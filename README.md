@@ -3,12 +3,13 @@
 ## Proof of Installation
 
 ### Python
-![Python](images/python-installation.png)
+[Python](images/python-installation.png)
 
 ### Git
-![Git](images/git-installation.png)
+[Git](images/git-installation.png)
 
 ### VS Code
-![VS Code](images/vscode-installation.png)
+[VS Code](images/vscode-installation.png)
 
 Hypothesis Username: zoakhu
+
