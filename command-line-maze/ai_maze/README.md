@@ -24,6 +24,6 @@ cat filename.txt
 ## Victory
 Find the file that confirms you have successfully navigated the Academic AI Maze.
 
-### Follow the clues to reach the solution.
+### Follow the clues to reach the solution!
 
 
