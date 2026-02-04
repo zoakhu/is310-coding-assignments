@@ -1,5 +1,5 @@
 # The Academic AI Command Line Maze
-### Author: Zohra Hussaini
+### by: Zohra Hussaini
 
 ## Goal
 Navigate the maze using command line commands and uncover how AI shapes academic life.
