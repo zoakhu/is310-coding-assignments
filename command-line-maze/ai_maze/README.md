@@ -1,14 +1,21 @@
-# Navigating AI in Academic Life
-**By Zohra Hussaini**
+The Academic AI Command Line Maze
+Author: Zohra Hussaini
 
-## Instructions
-Use the command line to navigate this maze.
+Goal
+Navigate the maze using command line commands and find the final solution.
 
-Helpful commands:
-- `cd` to move between directories
-- `ls` and `ls -la` to list files (including hidden ones)
-- `cat` to read clues
+Start
+cd entrance
+cat welcome.txt
 
-Start in the `entrance` directory and follow the clues to reach the solution.
+Useful Commands
+ls
+ls -la
+cd foldername
+cd ..
+cat filename.txt
+
+Follow the clues to reach the solution.
+
 
 
