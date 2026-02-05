@@ -6,7 +6,7 @@ By Zohra Hussaini
 
 You’ve stepped into the realm of AI in academics. Paths twist, files mislead, and not everything is as it seems.
 
-Some clues will guide you. Others will distract. Only one leads to the solution — if you can find it.
+Some clues will guide you. Others will distract. Only one leads to the solution, if you can find it.
 
 ## Necessary Commands
 | Command | Purpose |
