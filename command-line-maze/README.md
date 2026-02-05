@@ -1,10 +1,12 @@
 # Academic AI Maze
+
 By Zohra Hussaini
 
 ## Overview
-You are a student navigating the world of AI tools in academics. Some paths will help you find answers, others are distractions. Hidden hints may help, but beware of decoys! 🎉
 
-Explore carefully — not every file is what it seems. Can you reach the true solution?
+You’ve stepped into the realm of AI in academics. Paths twist, files mislead, and not everything is as it seems.
+
+Some clues will guide you. Others will distract. Only one leads to the solution — if you can find it.
 
 ## Necessary Commands
 | Command | Purpose |
