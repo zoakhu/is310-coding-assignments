@@ -1,0 +1,6 @@
+Welcome to the Academic AI Maze.
+
+This maze explores how AI shows up in academic life:
+policies, tools, and evaluation.
+
+Start where rules usually live.
