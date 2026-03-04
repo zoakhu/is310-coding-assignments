@@ -23,4 +23,7 @@ for movie in favorite_movies:
   result = check_movie(movie)
 
   if result is not None:
-    recent_
+    recent_movies.append(result)
+
+print("Movies released after 2000:")
+print(recent_movies)
