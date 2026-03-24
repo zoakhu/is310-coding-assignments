@@ -25,8 +25,3 @@ def main():
         writer = csv.writer(file)
         writer.writerow(["Name", "Link"])
         writer.writerows(data)
-
-    print("Scraping complete!")
-
-if __name__ == "__main__":
-    main()
