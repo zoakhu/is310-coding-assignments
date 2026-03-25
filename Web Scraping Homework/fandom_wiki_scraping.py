@@ -1,32 +1,55 @@
 import cloudscraper
 from bs4 import BeautifulSoup
 import csv
+import time
 
-def main():
-    scraper = cloudscraper.create_scraper()
+scraper = cloudscraper.create_scraper()
 
-    url = "https://harrypotter.fandom.com/wiki/Category:Characters"
+characters = [
+    "Harry_Potter",
+    "Hermione_Granger",
+    "Ron_Weasley",
+    "Albus_Dumbledore",
+    "Severus_Snape",
+    "Draco_Malfoy",
+    "Sirius_Black",
+    "Rubeus_Hagrid",
+    "Luna_Lovegood",
+    "Neville_Longbottom"
+]
 
-    response = scraper.get(url)
-    html = response.text
+def get_infobox_value(soup, field):
+    item = soup.find(attrs={"data-source": field})
+    if item:
+        value = item.find(class_="pi-data-value")
+        if value:
+            return value.get_text(strip=True)
+    return ""
 
-    soup = BeautifulSoup(html, "html.parser")
+characters_data = []
 
-    characters = soup.find_all("a", class_="category-page__member-link")
+for name in characters:
+    url = "https://harrypotter.fandom.com/wiki/" + name
+    print("Scraping:", url)
 
-    data = []
+    response = scraper.get(url, timeout=10)
+    soup = BeautifulSoup(response.text, "html.parser")
 
-    for char in characters:
-        name = char.text.strip()
-        link = char.get("href")
-        data.append([name, link])
+    character_info = {
+        "name": name.replace("_", " "),
+        "house": get_infobox_value(soup, "house"),
+        "gender": get_infobox_value(soup, "gender"),
+        "link": url
+    }
 
-    with open("harry_potter_characters.csv", "w", newline="", encoding="utf-8") as file:
-        writer = csv.writer(file)
-        writer.writerow(["Name", "Link"])
-        writer.writerows(data)
-        
-    print("Scraping complete!")
+    characters_data.append(character_info)
+    print("Done:", character_info["name"])
 
-if __name__ == "__main__":
-    main()
+
+with open("harry_potter_characters.csv", "w", newline="", encoding="utf-8") as f:
+    writer = csv.DictWriter(f, fieldnames=characters_data[0].keys())
+    writer.writeheader()
+    writer.writerows(characters_data)
+
+print("Saved CSV!")
+print("Scraped", len(characters_data), "characters.")
