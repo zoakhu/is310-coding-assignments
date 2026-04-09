@@ -1,0 +1,1 @@
+I used the Harry Potter API to retrieve data about a specific character (Harry Potter) using the character ID endpoint. I then used the character’s name to search for related cultural items in the Europeana API. I chose this API because I am interested in the Harry Potter series and wanted to connect fictional character data with real-world cultural archives.
